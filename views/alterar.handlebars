@@ -1,0 +1,21 @@
+<br><br>
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col div3">
+    <form class="row g-3" action="/update" method="POST">
+    <legend>Alterando dados</legend>
+    {{#each posts}}
+        <label class="form-label">Código:</label>
+        <input class="form-control" type="text" name="id" value="{{id}}" readonly="true">
+        <label class="form-label">Titulo:</label>
+        <input class="form-control" value="{{titulo}}" type="text" name="titulo">
+        <label class="form-label" >Conteúdo:</label>
+        <textarea class="form-control" name="conteudo">{{conteudo}}</textarea><br><br>
+        <button class="btn btn-primary" type="submit">Alterar</button>
+    {{/each}}  
+    </form>
+    </div>
+    <div class="col">
+    </div>
+  </div>
